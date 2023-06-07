@@ -8,7 +8,6 @@ body{
     max-width: 300px;
     margin: auto;
     padding: 30px;
-    
     border-radius: 20px;
 }
 header{
@@ -17,6 +16,23 @@ header{
 }
 code{
     font-size: 16px;
+}
+.limpiar{
+    width: 40px;
+}
+.ult{
+    background-color: darkcyan;
+}
+.ult:hover{
+    background-color: cyan;
+}
+.operacion.igual{
+    width: 283px;
+    background-color: darkgoldenrod;
+}
+.operacion.igual:hover{
+    width: 283px;
+    background-color: yellow;
 }
 h1{
     text-align: center;
@@ -27,9 +43,7 @@ h1{
     
 
 }
-.ult, .limpiar{
-    width: 97px;
-}
+
 .operacion{
     background-color: darkgreen;
 }
@@ -43,10 +57,11 @@ h1{
     background-color: red;
 }
 #typear{
-    background-color: dimgray;
+    background-color: gray;
     border: 0px;
-    padding: 0px;
-    width: 283px;
+    padding: 15px;
+    width: 255px;
+    margin-bottom: 20px;
     padding-bottom: 10px;
     color: black;
     font-size: 40px;
@@ -74,3 +89,4 @@ input:hover{
 td{
     display: inline-flex;
 }
+
