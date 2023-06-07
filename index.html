@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+    <script>
+    </script>
+</head>
+<body>
+    <header>
+        <h1>BASIC CALCULATOR</h1>
+        <p>Uses <code>eval()</code>, which is considered a bad practice</p>
+    </header>
+
+    <section>
+        <div class="cuerpo-calculadora">
+            <form action="">
+                <div>
+
+                    <input type="text" id="typear" name="pantalla" readonly>
+
+                </div>
+                <div class="fila">
+
+                    <input type="button" value="^" class="operacion" onclick="pantalla.value+='**'">
+
+                    <input type="button" value="AC" class="limpiar" onclick="pantalla.value=''">
+
+                    <input type="button" value="DE" class="limpiar" onclick="pantalla.value=pantalla.value.toString().slice(0,-1)">
+
+                </div>
+                <div class="fila">
+
+                    <input type="button" value="7" onclick="pantalla.value+='7'">
+
+                    <input type="button" value="8" onclick="pantalla.value+='8'">
+
+                    <input type="button" value="9" onclick="pantalla.value+='9'">
+
+                    <input type="button" value="&divide;" class="operacion" onclick="pantalla.value+='/'">
+
+                </div>
+                <div class="fila">
+
+                    <input type="button" value="4" onclick="pantalla.value+='4'">
+
+                    <input type="button" value="5" onclick="pantalla.value+='5'">
+
+                    <input type="button" value="6" onclick="pantalla.value+='6'">
+
+                    <input type="button" value="&times;" class="operacion" onclick="pantalla.value+='*'">               
+
+                </div>
+                <div class="fila">
+
+                    <input type="button" value="1" onclick="pantalla.value+='1'">
+
+                    <input type="button" value="2" onclick="pantalla.value+='2'">
+
+                    <input type="button" value="3" onclick="pantalla.value+='3'">
+
+                    <input type="button" value="&plus;" class="operacion" onclick="pantalla.value+='+'">
+
+                </div>
+                <div class="fila">
+
+                    <input type="button" value="0" class="ult" onclick="pantalla.value+='0'">
+
+                    <input type="button" value="." class="ult" onclick="pantalla.value+='.'">
+
+                    <input type="button" value="&equals;" class="operacion" onclick="pantalla.value=eval(pantalla.value)">
+
+                </div>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
