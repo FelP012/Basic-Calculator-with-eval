@@ -23,11 +23,11 @@
                 </div>
                 <div class="fila">
 
-                    <input type="button" value="^" class="operacion" onclick="pantalla.value+='**'">
-
                     <input type="button" value="AC" class="limpiar" onclick="pantalla.value=''">
 
                     <input type="button" value="DE" class="limpiar" onclick="pantalla.value=pantalla.value.toString().slice(0,-1)">
+                    <input type="button" value="^" class="operacion" onclick="pantalla.value+='**'">
+                    <input type="button" value="&divide;" class="operacion" onclick="pantalla.value+='/'">
 
                 </div>
                 <div class="fila">
@@ -38,7 +38,7 @@
 
                     <input type="button" value="9" onclick="pantalla.value+='9'">
 
-                    <input type="button" value="&divide;" class="operacion" onclick="pantalla.value+='/'">
+                    <input type="button" value="&times;" class="operacion" onclick="pantalla.value+='*'">
 
                 </div>
                 <div class="fila">
@@ -49,7 +49,7 @@
 
                     <input type="button" value="6" onclick="pantalla.value+='6'">
 
-                    <input type="button" value="&times;" class="operacion" onclick="pantalla.value+='*'">               
+                    <input type="button" value="&plus;" class="operacion" onclick="pantalla.value+='+'">               
 
                 </div>
                 <div class="fila">
@@ -60,7 +60,7 @@
 
                     <input type="button" value="3" onclick="pantalla.value+='3'">
 
-                    <input type="button" value="&plus;" class="operacion" onclick="pantalla.value+='+'">
+                    <input type="button" value="&minus;" class="operacion" onclick="pantalla.value+='-'">
 
                 </div>
                 <div class="fila">
@@ -68,8 +68,11 @@
                     <input type="button" value="0" class="ult" onclick="pantalla.value+='0'">
 
                     <input type="button" value="." class="ult" onclick="pantalla.value+='.'">
+                    <input type="button" value="(" class="ult" onclick="pantalla.value+='('">
+                    <input type="button" value=")" class="ult" onclick="pantalla.value+=')'">
+                    
 
-                    <input type="button" value="&equals;" class="operacion" onclick="pantalla.value=eval(pantalla.value)">
+                    <input type="button" value="&equals;" class="operacion igual" onclick="pantalla.value=eval(pantalla.value)">
 
                 </div>
             </form>
