@@ -22,7 +22,7 @@ h1{
     text-align: center;
     margin-top: 15vh;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 500%;
+    font-size: 35px;
     letter-spacing: 5px;
     
 
@@ -74,4 +74,3 @@ input:hover{
 td{
     display: inline-flex;
 }
-
